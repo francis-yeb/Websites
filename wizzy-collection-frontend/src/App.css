@@ -1,0 +1,302 @@
+/* Colors */
+:root {
+  --lightColor: #F1F1F2;
+  --primaryColor: #0281FA;
+  --secondary: #E91E63;
+}
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+a.active {
+  border-bottom: 2px solid var(--primaryColor);
+}
+
+.intro {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--primaryColor);
+  color: white;
+  justify-content: center;
+  align-items: center;
+
+}
+.e-com-lo{
+  max-width: 100%;
+}
+.auth-form  {
+  background-color: #454545;
+  color: white;
+}
+
+/* App logo */
+.log{
+  min-width: 100px;
+  max-height: 80%;
+  object-fit: contain;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* styles.css */
+.spinner-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(17, 13, 13, 0.539); /* Adjust opacity as needed */
+  backdrop-filter: blur(2px); /* Apply blur effect to the background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* z-index: 100; */
+}
+
+/* Showing cart */
+.cart-items {
+  background-color: yellow;
+  position: fixed;
+  top: 60px;
+  right: 0;
+
+  z-index: 100;
+}
+
+
+@media (max-width: 767px) { /* Targeting small screens where the navbar collapses */
+  .navbar-collapse {
+    padding-left: 0; /* Remove default left padding to align links to the left */
+    display: block;
+    
+  }
+
+  .nav-link.active {
+    border-left: 2px solid #0281FA91; /* Add left border to active link */
+    /* border-bottom: none; Remove default bottom border */
+  }
+  .nav-link{
+    width: 100%;
+    transition: all 5s;
+  }
+
+}
+
+
+
+/* Admin Dashboard */
+/* List items */
+
+.sidNave {
+  background-color: red;
+}
+.listItem {
+  background: var(--lightColor);
+  border-radius: 20px 0px 0 20px;
+  margin: 5px 5px;
+}
+
+/* Dashboard Page style */
+.paddingall {
+  box-sizing: border-box;
+  padding: 0px;
+  max-height: 50%;
+}
+
+.priceTitle {
+  font-weight: 600;
+}
+
+.priceSubTitle {
+  font-size: 14px;
+}
+
+.iconStyle {
+  margin-top: 20px;
+  margin-left: 20px;
+  color: aliceblue;
+}
+.iconStyleBlack {
+  margin-top: 20px;
+  margin-left: 20px;
+  /* color: black; */
+}
+
+.gradient {
+  background: rgb(40, 34, 70);
+  background: linear-gradient(158deg, rgba(40,34,70,1) 0%, rgba(2, 129, 250) 100%);
+}
+.gradientLight {
+  background: rgb(53, 138, 148);
+  background: linear-gradient(158deg, rgba(53, 138,148,1) 0%, rgba(91,180,96,1) 100%);
+}
+.topPad {
+  padding-top: 80px;
+  padding-bottom: 20px;
+}
+
+.bgColor {
+  padding-top: 80px;
+  min-height: 100vh;
+  background: #ECEFF1;
+  /* background: linear-gradient(158deg, rgb(224,244,224) 0%, rgb(233,237,254) 100%); */
+}
+
+.sweet-alert-container {
+  z-index: 9999 !important; /* Set a high z-index value */
+}
+
+
+
+
+/* Home Section */
+.main-section {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background-image: url('/public/images/img-section.jpg');
+  /* filter: blur(3px); */
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+  margin-bottom: 25px;
+}
+.main-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  margin-top: 70px;
+}
+/* Hero section */
+.hero {
+  position: relative;
+  /* margin-bottom: 30px; */
+  height: 350px;
+  background-color: white;
+  /* background-color: #0281FA; */
+  z-index: 5;
+}
+
+
+
+.img-sec {
+  position: relative;
+  /* height: 430px; */
+  /* height: 400px; */
+  background-color: transparent;
+  z-index: 5;
+  padding: 100px;
+  margin-bottom: 0px;
+}
+/* .sh {
+  height: 50px;
+  width: 150px;
+} */
+
+.img-sec-trans {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 0;
+  left: 0;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+.trans-text{
+  color: white;
+  margin-bottom: 40px;
+}
+
+/* Product container */
+.product-con {
+  padding-top: 10px;
+  height: 500px;
+  z-index: 5;
+  background: white;
+}
+
+/* Carousel */
+.myCaro {
+  
+}
+
+.carousel-img {
+  background-color: #0281FA;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.filter-btn {
+  display: flex;
+  justify-content: space-between;
+  align-content: space-between;
+}
+
+.text-highlight {
+  background-color: #ffd700; /* Adjust the color as needed */
+  padding: 0 5px;
+}
+
+.img-fluid {
+  border-radius: 15px; /* Rounded corners */
+}
+
+
+.review-card {
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.carousel-control-prev-icon, .carousel-control-next-icon {
+  background-color: rgba(0, 0, 0, 0.5);
+}

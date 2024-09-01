@@ -1,0 +1,18 @@
+
+
+{
+    "data": [
+        {
+            "id":1,
+            "name":"Men Suit",
+            "price": 200,
+            "imgUrl": "/images/suit.png"
+        },
+        {
+            "id":2,
+            "name":"Paul Gaudriault",
+            "price": 150,
+            "imgUrl": "/images/allmen.png"
+        }
+    ]
+}
